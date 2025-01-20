@@ -34,7 +34,8 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Cadavre Exquis
+      Cadavre Exquis |
+      Painting a Better World
         <div class="three-model">
           <a href="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png"><img src="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png" id="model1" alt="Model 1 Image" /></a>
         </div>
