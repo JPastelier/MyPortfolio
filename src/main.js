@@ -3,10 +3,12 @@ import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
 const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+  "./Frank/3133.png",
+  "./Frank/3134.png",
+  "./Frank/3135.png",
+  "./Frank/3136.png",
+  "./Frank/3137.png",
+  "./Frank/3138.png",
 ];
 
 const trees = [
@@ -32,22 +34,23 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      Cadavre Exquis
         <div class="three-model">
-          <div id="model1"></div>
+          <a href="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png"><img src="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png" id="model1" alt="Model 1 Image" /></a>
         </div>
         <div id="images-description">
           <div id="images">
             ${cubes
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (cube, index) => `<a href="${cube}" target="_blank"><img src="${cube}" alt="cube${index + 1}" /></a>`
               )
               .join("")}
           </div>
-          <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+          <h4 id="description">Painting a Better World: Impacting society to promote a better future through art and design.</h4>
         </div>
       </div>
 
+      ${/* Model 2 commented out}
       <div id="project-row">
       Model 2
         <div class="three-model">
@@ -65,7 +68,9 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
         </div>
       </div>
+*/""}
 
+  ${/* Model 3 commented out}
       <div id="project-row">
       Model 3
         <div class="three-model">
@@ -82,6 +87,8 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
+*/""}
+
     </section>
 
     <ul id="footer-items">
@@ -98,6 +105,6 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+//createThreeScene("#model1", "/3DModels/project1/cube.obj");
+//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
