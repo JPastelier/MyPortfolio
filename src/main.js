@@ -46,7 +46,25 @@ document.querySelector("#app").innerHTML = `
               )
               .join("")}
           </div>
-          <h4 id="description">Painting a Better World: Impacting society to promote a better future through art and design.</h4>
+          <h4 id="description"> This	exquisite	corpse,	titled	“Painting	a	Better	World,”	reflects	my	artistic	
+background and current design education, as well as my beliefs that art and 
+design	can	provide	a	positive	future.	At	the	start	of	this	project,	I	reflected	on	what	
+motivates me as an artist. That motivation is establishing a meaningful impact on a 
+viewer of my art. When I thought about this, I realized that my motivation and ideals 
+of	art	were	similar	to	the	design	practice.	Both	the	art	and	design	fields	allow	me	
+to tackle projects that could positively impact people, especially during a volatile 
+period in our world. With this in mind, I began producing the exquisite corpse to 
+showcase this belief, using images that resonated with me in the collage such as 
+artistic material, books, people, and nature.
+ The images chosen highlight the artistic and design process intending to focus 
+on the human experience, as well as the connection between the outcome and 
+the beginning purpose of a creative process, seen in the painting of a vibrant and 
+better world in the middle surrounded by decaying polluted visuals. However, I was 
+surprised	that	I	resonated	with	images	correlating	to	trash	and	pollution.	Reflecting	
+upon this use of visuals, I realized that a major world problem that I focus on and is 
+personal to me is pollution and excessive wastefulness. Regardless of the problem, 
+I believe that art and design can change society and the world for the better. 
+</h4>
         </div>
       </div>
 
