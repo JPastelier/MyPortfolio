@@ -12,10 +12,8 @@ const cubes = [
 ];
 
 const trees = [
-  "./treeDrawings/tree1.jpg",
-  "./treeDrawings/tree2.jpg",
-  "./treeDrawings/tree3.jpg",
-  "./treeDrawings/tree4.jpg",
+  "./Geo/A2Dsgn313PDF.png",
+  "./Geo/A2Dsgn313PDF2.png",
 ];
 
 const houses = [
@@ -69,25 +67,24 @@ I believe that art and design can change society and the world for the better.
         </div>
       </div>
 
-      ${/* Model 2 commented out}
+      
       <div id="project-row">
-      Model 2
+      Geo and Interop 
         <div class="three-model">
           <div id="model2"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${trees
+             ${trees
               .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
+                (trees, index) => `<a href="${trees}" target="_blank"><img src="${trees}" alt="tree${index + 1}" /></a>`
               )
               .join("")}
           </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
+          <h4 id="description">Assignment to learn about interoperability.</h4>
         </div>
       </div>
-*/""}
+
 
   ${/* Model 3 commented out}
       <div id="project-row">
@@ -125,5 +122,5 @@ I believe that art and design can change society and the world for the better.
 
 // Create three.js scenes for each
 //createThreeScene("#model1", "/3DModels/project1/cube.obj");
-//createThreeScene("#model2", "/3DModels/project2/tree.obj");
+createThreeScene("#model2", "/3DModels/project2/geo.obj");
 //createThreeScene("#model3", "/3DModels/project3/cottage.obj");
