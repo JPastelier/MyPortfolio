@@ -17,10 +17,28 @@ const trees = [
 ];
 
 const houses = [
-  "./houseDrawings/house1.jpg",
-  "./houseDrawings/house2.jpg",
-  "./houseDrawings/house3.jpg",
-  "./houseDrawings/house4.jpg",
+  "./houseDrawings/Echavez_JohnPaul_30209996_DSGN313_A3.png",
+  "./houseDrawings/Echavez_JohnPaul_30209996_DSGN313_A33.png",
+  "./houseDrawings/Echavez_JohnPaul_30209996_DSGN313_A35.png",
+  "./houseDrawings/Echavez_JohnPaul_30209996_DSGN313_A36.png",
+  "./houseDrawings/Echavez_JohnPaul_30209996_DSGN313_A37.png",
+];
+
+const rocks = [
+  "./Erdem/Screenshot(411).png",
+  "./Erdem/Screenshot(412).png",
+  "./Erdem/Screenshot(413).png",
+  "./Erdem/Screenshot(414).png",
+  "./Erdem/Screenshot(416).png",
+];
+
+const marios = [
+  "./Marios/RenderedIsland.png",
+  "./Marios/DSGN311_GameEngine2.png",
+  "./Marios/DSGN311_GameEngine3.png",
+  "./Marios/DSGN311_GameEngine5.png",
+  "./Marios/DSGN311_GameEngine6.png",
+  "./Marios/DSGN311_GameEngine7.png",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -32,7 +50,7 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Cadavre Exquis |
+      Project: Cadavre Exquis |
       Painting a Better World
         <div class="three-model">
           <a href="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png"><img src="./Echavez_JohnPaul_30209996_DSGN313_A1 - Copy.png" id="model1" alt="Model 1 Image" /></a>
@@ -69,7 +87,7 @@ I believe that art and design can change society and the world for the better.
 
       
       <div id="project-row">
-      Geo and Interop 
+      Project: Interoperability 
         <div class="three-model">
           <div id="model2"></div>
         </div>
@@ -81,14 +99,14 @@ I believe that art and design can change society and the world for the better.
               )
               .join("")}
           </div>
-          <h4 id="description">Assignment to learn about interoperability.</h4>
+          <h4 id="description">Assignment to learn about interoperability and modelling using Blender and Rhino.</h4>
         </div>
       </div>
 
 
-  ${/* Model 3 commented out}
       <div id="project-row">
-      Model 3
+      Project: Object Design |
+      Hand of Creation
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -96,14 +114,52 @@ I believe that art and design can change society and the world for the better.
           <div id="images">
             ${houses
               .map(
-                (house, index) => `<img src="${house}" alt="house${index + 1}" />`
+                (houses, index) => `<a href="${houses}" target="_blank"><img src="${houses}" alt="house${index + 1}" /></a>`
               )
               .join("")}
           </div>
-          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
+          <h4 id="description"> A wearable multitool that allows artists and designers to paint, draw, and create, as well as being a symbol of human creation and want. .</h4>
         </div>
       </div>
-*/""}
+
+    </div>
+      <div id="project-row">
+      Project: Place Making |
+      Paracosm
+        <div class="three-model">
+          <div id="model4"></div>
+        </div>
+        <div id="images-description">
+          <div id="images">
+            ${rocks
+              .map(
+                (rocks, index) => `<a href="${rocks}" target="_blank"><img src="${rocks}" alt="rock${index + 1}" /></a>`
+              )
+              .join("")}
+          </div>
+          <h4 id="description">Paracosm is a visionary pavillion where architecture converges with art in a realm of limitless imagination. Its two gracefully curving arms, defined by louvre facades and supported by bold diagonal frames, invite visitors to traverse a living gallery. Here, every step unfolds a dynamic space of regenerative art—a place where creativity transforms architecture into an immersive, interactive world.</h4>
+        </div>
+      </div>
+  
+
+    </div>
+      <div id="project-row">
+      Project: Game Engine |
+      The Painted World
+        <div class="three-model">
+          <div id="model5"></div>
+        </div>
+        <div id="images-description">
+          <div id="images">
+            ${marios
+              .map(
+                (marios, index) => `<a href="${marios}" target="_blank"><img src="${marios}" alt="mario${index + 1}" /></a>`
+              )
+              .join("")}
+          </div>
+          <h4 id="description">A Spatial world made in Unity and Blender containing projects and semester outcomes.</h4>
+        </div>
+      </div>
 
     </section>
 
@@ -120,7 +176,7 @@ I believe that art and design can change society and the world for the better.
   </main>
 `;
 
-// Create three.js scenes for each
+// Create three.js scenes for eachq
 //createThreeScene("#model1", "/3DModels/project1/cube.obj");
 createThreeScene("#model2", "/3DModels/project2/geo.obj");
-//createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+createThreeScene("#model3", "/3DModels/project3/sexyhand.obj");
